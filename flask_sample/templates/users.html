@@ -1,0 +1,26 @@
+<h1>User List</h1>
+<a href="/">戻る</a>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>password</th>
+                <th>created_at</th>
+                <th>updated_at</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in contents %}
+            <tr>
+                <td>{{user.name}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.created_at}}</td>
+                <td>{{user.updated_at}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+

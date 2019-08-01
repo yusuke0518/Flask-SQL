@@ -1,0 +1,26 @@
+<h1>Order List</h1>
+<a href="/">戻る</a>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>price</th>
+                <th>kind</th>
+                <th>feature</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in contents %}
+            <tr>
+                <td>{{order.name}}</td>
+                <td>{{order.price}}</td>
+                <td>{{order.kind}}</td>
+                <td>{{order.feature}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
