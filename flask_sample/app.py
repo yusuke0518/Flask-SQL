@@ -12,3 +12,7 @@ def create_app():
     return app
 
 app = create_app()
+
+@app.route("/",methods=["GET"])
+def register_page():
+    return 
